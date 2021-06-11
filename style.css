@@ -85,7 +85,7 @@ a {
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #000000 !important;
+    color: #000000 ;
     padding: 10px 30px !important;
 }
 
@@ -494,8 +494,8 @@ hr {
     font-weight: 600;
 }
 
-.btn-faq a:hover, .btn-faq a, .btn a, .btn:hover a{
-    color: white;
+.btn-faq a:hover, .btn-faq a, .btn a, .btn:hover a, .btn-cont a {
+    color: white !important;
 }
 
 .btn-cont {
@@ -512,9 +512,8 @@ hr {
     background-color: #FA5805;
 }
 
-.btn-cont:hover {
-    border: 1px solid #FA5805;
-    color: #FA5805;
+.btn-cont:hover, .btn-cont a:hover {
+    color: #FA5805 !important;
     background-color: transparent;
 }
 
