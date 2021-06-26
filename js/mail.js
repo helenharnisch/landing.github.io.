@@ -1,20 +1,24 @@
 
-const url = "https://tikitakaapp.cl/mail.php"
+const url = "http://localhost:12001/contacform"
 const sendMail = (name, lastname, phone, mail, message) => {
     let alertSuccess = document.getElementById('success')
     let alertError = document.getElementById('error')
     const f = new FormData();
     f.append("name", name);
     f.append("lastname", lastname);
-    f.append("email", mail);
-    f.append("msg", message);
+    f.append("mail", mail);
+    f.append("message", message);
     f.append("phone", phone);
     fetch(url, { method: "POST", body: f })
         .then(res => res.json())
         .then(response => {
-            console.log(response)
-            alertSuccess.style.display = "block";
-            alertError.style.display = "none";
+            if (response.success) {
+                alertSuccess.style.display = "block";
+                alertError.style.display = "none";
+            } else {
+                alertSuccess.style.display = "none";
+                alertError.style.display = "block";
+            }
         })
         .catch(err => {
             console.log(err)
@@ -27,7 +31,6 @@ const activeAlert = (node, bool) => {
     let parent = node.parentNode;
     let span = parent.querySelector('.alert-form');
     span.style.display = bool ? 'block' : 'none';
-    console.log(parent, span, bool)
 }
 
 const validForm = () => {
