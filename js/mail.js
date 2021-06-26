@@ -12,13 +12,8 @@ const sendMail = (name, lastname, phone, mail, message) => {
     fetch(url, { method: "POST", body: f })
         .then(res => res.json())
         .then(response => {
-            if (response.success) {
-                alertSuccess.style.display = "block";
-                alertError.style.display = "none";
-            } else {
-                alertSuccess.style.display = "none";
-                alertError.style.display = "block";
-            }
+            alertSuccess.style.display = "block";
+            alertError.style.display = "none";
         })
         .catch(err => {
             console.log(err)
