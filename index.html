@@ -13,20 +13,19 @@
     <!-- Required Core Stylesheet -->
     <link rel="stylesheet" href="css/glide.core.min.css">
     <!--<link rel="stylesheet" href="css/glide.theme.min.css">-->
-
     <title>tiki-taka</title>
 </head>
 <body>
 <section>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="inicio">
+    <nav class="navbar py-3 navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand " href="#"><img src="assets/img/logos/logo-nav.svg" class="img-fluid" alt="Logo tiki-taka"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="assets/img/logos/logo-nav.svg" class="img-fluid" alt="Logo tiki-taka"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse nav-tt navbar-collapse d-flex justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
+            <div class="collapse nav-tt navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
                         <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
@@ -45,17 +44,17 @@
             </div>
         </div>
     </nav>
-    <div class="bg-banner mb-5">
+    <div class="bg-banner pt-5 mb-5" id="inicio">
         <div class="container">
             <div class="row py-5">
                 <div class="col-sm-12 col-lg-6 d-flex justify-content-center d-flex align-items-center">
                     <div class="text-banner">
                         <h1>Genera y aumenta tus propios ingresos</h1>
                         <p>Regístrate y recibe ofertas para entregar <br/> servicios a la comunidad</p>
-                        <button class="btn bg-black"><a href="#contacto">Contacto</a></button>
+                        <button class="btn bg-black"><a href="https://app.tikitakaapp.cl/form?register=1" target="_blank">Registrate</a></button>
                     </div>
                 </div>
-                <div class="col-ms-12 col-lg-6">
+                <div class="col-ms-12 col-lg-6 mt-5 mt-lg-0">
                     <img src="assets/img/bg/bg.png" alt="Apliación" class="img-fluid">
                 </div>
             </div>             
@@ -64,40 +63,30 @@
     <div class="container">
         <div class="row py-5">
             <div class="col-xs-12 col-lg d-flex justify-content-center">
-                <div class="card d-flex justify-content-center text-center">
+                <div class="card text-center">
                     <div class="height-img">
                         <img src="assets/icons/uno.svg" class="img-fluid" alt="icono">
                     </div>
                     <h2>Regístrate</h2>
-                    <p>¡Regístrese en nuestro sitio de forma gratuita en unos pocos pasos rápidos y sencillos! Crea tu usuario y completa tu perfil</p>
+                    <p>¡Regístrese en nuestro sitio de forma gratuita en unos pocos pasos rápidos y sencillos! Crea tu usuario y completa tu perfil.</p>
                 </div>
             </div>
             <div class="col-xs-12 col-lg d-flex justify-content-center">
-                <div class="card my-4 m-lg-0 d-flex justify-content-center text-center">
+                <div class="card my-4 m-lg-0 text-center">
                     <div class="height-img">
                         <img src="assets/icons/dos.svg" class="img-fluid" alt="icono">
                     </div>
                     <h2>Acepta trabajos</h2>
-                    <p>Una vez activado tu perfil, comenzarás a recibir las
-                        ofertas de trabajo para que las puedas aceptar.
-                        Las ofertas se le enviarán a través de notificaciones
-                        automáticas desde la aplicación Tiki-taka.
-                        Tienes la libertad de decidir qué ofertas aceptas, lo que te permite 
-                        organizar el trabajo en función de tu horario.</p>
+                    <p>Comenzarás a recibir ofertas de trabajo a través de notificaciones desde la aplicación Tikitaka y podrás decidir cuales aceptas en función de tu horario.</p>
                 </div>
             </div>
             <div class="col-xs-12 col-lg d-flex justify-content-center">
-                <div class="card d-flex justify-content-center text-center">
+                <div class="card text-center">
                     <div class="height-img">
                         <img src="assets/icons/tres.svg" class="img-fluid" alt="icono">
                     </div>
                     <h2>Aumenta tus ingresos</h2>
-                    <p>Como proveedor de servicios autónomo, tú decides que tarifas cobrarás por tus trabajos.
-                        Puedes modificar tus tarifas en tu perfil en cualquier momento. Para ayudarte a
-                        decidir la tarifa más apropiada, la aplicación te indicará el precio
-                        de mercado en referencia a las tarifas ingresadas por
-                        otros proveedores. Todos tus pagos se procesan de forma segura en linea, en tu cuenta bancaria y en forma
-                        semanal.</p>
+                    <p>Tú decides la tarifa de tus servicios y Tikitaka te ayudará a decidir la más apropiada. Tus pagos se procesan en línea, de forma segura y a tu cuenta bancaria en forma semanal.</p>
                 </div>
             </div>
         </div>
@@ -115,22 +104,17 @@
                     <div class="text-circle text-right py-4">
                         <div class="circle-orange push-right"></div>
                         <h2>Más clientes</h2>
-                        <p>Tendrás disponible una amplia red de clientes
-                            que están buscando proveedores para
-                            realizar todos los servicios que necesitan</p>
+                        <p>Tendrás disponible una amplia red de clientes que están buscando proveedores para realizar todos los servicios que necesitan</p>
                     </div>
                     <div class="text-circle text-right py-4">
                         <div class="circle-orange push-right"></div>
                         <h2>Flexibilidad horaria</h2>
-                        <p>Tú decides cuándo, donde y con qué frecuencia aceptas las 
-                            ofertas de trabajo</p>
+                        <p>Tú decides cuándo, donde y con qué frecuencia aceptas las ofertas de trabajo</p>
                     </div>
                     <div class="text-circle text-right py-4">
                         <div class="circle-orange push-right"></div>
                         <h2>Sistema de valoraciones</h2>
-                        <p>Mantener una buena puntuación general, aptitudes validadas
-                            y una alta calificación; te dará la posibilidad que más clientes
-                            te seleccionen para realizar servicios y así aumnetar tus ganancias</p>
+                        <p>Mantener una buena puntuación general, aptitudes validadas una alta calificación; te dará la posibilidad que más clientes te seleccionen para realizar servicios y así aumnetar tus ganancias</p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-lg d-flex justify-content-center">
@@ -140,95 +124,131 @@
                     <div class="text-circle text-left pt-3">
                         <div class="circle-orange push-left"></div>
                         <h2>Proyección de tus ganancias</h2>
-                        <p>Podrás revisar en línea la proyección de tus ganancias en base a los trabajos 
-                            futurosque hayas aceptado y estén en tu agenda. Además, podrás
-                            revisar tus ganancias acumuladas de los trabajos que ya hayas realizado.</p>
+                        <p>Podrás revisar en línea la proyección de tus ganancias en base a los trabajos futurosque hayas aceptado y estén en tu agenda. Además, podrás revisar tus ganancias acumuladas de los trabajos que ya hayas realizado.</p>
                     </div>
                     <div class="text-circle text-left pt-3">
                         <div class="circle-orange push-left"></div>
                         <h2>Tus propias tarifas</h2>
-                        <p>Tu decides que tarifas le pones a tus servicios.
-                            Además, podrás definir una tarifa máxima
-                            para servicios de emergencia que los clientes necesiten realizar de inmediato.</p>
+                        <p>Tu decides que tarifas le pones a tus servicios. Además, podrás definir una tarifa máxima para servicios de emergencia que los clientes necesiten realizar de inmediato.</p>
                     </div>
                     <div class="text-circle text-left pt-3">
                         <div class="circle-orange push-left"></div>
                         <h2>Ranking de proveedores</h2>
-                        <p>En base a la calificación entregada por tus
-                            clientes, podrás revisar en qué lugar te encuentras
-                            en comparación a los demás proveedores. Estar en los primeros lugares del ranking aumenta tus 
-                            posibilidades de recibir ofertas de trabajo</p>
+                        <p>En base a la calificación entregada por tus clientes, podrás revisar en qué lugar te encuentras en comparación a los demás proveedores. Estar en los primeros lugares del ranking aumenta tus posibilidades de recibir ofertas de trabajo</p>
                     </div>
                 </div>
             </div>
             <div class="row py-5">
                 <div class="col-xs-12 col-lg text-center">
                     <h6>Próximamente</h6>
-                    <img src="assets/img/logos/logo-app.svg" class="img-fluid movile w-20" alt="tiendas">
+                    <img src="assets/img/logos/logo-app.svg" class="img-fluid movile w-20" alt="tiendas"  id="preguntas">
                 </div>
             </div>
         </div>
     </div>
-    <div class="bg-questions mt-5" id="preguntas"></div>
+    <div class="bg-questions mt-5"></div>
     <div class="container push-top">
         <div class="row title-questions">
-            <div class="col text-left pb-4 px-5">
+            <div class="col text-left pb-4">
                 <h2 class="pl-2">Preguntas más Frecuentes</h2>
                 <button class="btn-faq mb-4"><a href="faq.html" target="_blank">Ver Más</a></button>
             </div>
         </div>
         <div class="glide">
             <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides pb-5">
+                <ul class="glide__slides pb-5 aca">
+                    <!-- Sobre Aplicación -->
                     <li class="glide__slide">
                         <div class="col-xs-12 col-lg d-flex justify-content-around p-0">
                             <div class="card-questions">
-                                <div class="row">
-                                    <div class="col-xs-12 col-lg-3">
-                                        <img src="assets/img/perfil-2.png" class="img-fluid mx-auto" alt="Perfil">
-                                    </div>
-                                    <div class="col-xs-12 col-lg">
-                                        <h2>Pablo Vilches</h2>
-                                        <h4>Diseñador</h4>
-                                    </div>
-                                </div>
-                                <p class="m-0 pt-3">Vehicula vivamus auctor aliquam himenaeos, et euismod facilisi.</p>
+                                <h2>¿Tikitaka cobra comisión?</h2>
+                                <h4 class="text-orange">Aplicación</h4>
+                                <p class="m-0 pt-3">Sí, queremos llegar a más personas como tú que quieren obtener ingresos cuando más lo necesitan, pero esto requiere mucha difusión e inversión en marketing, lo cual tiene un costo asociado. Nuestra prioridad es potenciar al proveedor de servicios, por lo que siempre privilegiaremos que ganes más y por ello nuestra comisión sólo será del 10% del precio que tú definas.
+                                </p>
                             </div>
                         </div>
                     </li>
                     <li class="glide__slide">
                         <div class="col-xs-12 col-lg d-flex justify-content-around p-0">
                             <div class="card-questions">
-                                <div class="row">
-                                    <div class="col-xs-12 col-lg-3">
-                                        <img src="assets/img/perfil-2.png" class="img-fluid mx-auto" alt="Perfil">
-                                    </div>
-                                    <div class="col-xs-12 col-lg">
-                                        <h2>Pablo Vilches</h2>
-                                        <h4>Diseñador</h4>
-                                    </div>
-                                </div>
-                                <p class="m-0 pt-3">Vehicula vivamus auctor aliquam himenaeos, et euismod facilisi.</p>
+                                <h2>¿Cómo realizo mi registro?</h2>
+                                <h4 class="text-orange">Aplicación</h4>
+                                <p class="m-0 pt-3">Si tienes cuenta debes ingresar a www.tikitaka.cl e iniciar sesión con tu correo electrónico y contraseña donde accederás directamente a tu perfil. En caso que aún no te hayas registrado debes ir al botón REGISTRAR donde luego deberás ingresar los datos solicitados, crear tu contraseña y presionar registrar, posteriormente recibirás un código de activación a tu correo electrónico que deberás ingresar para activar tu cuenta y luego poder ingresar con tu correo electrónico y contraseña.</p>
                             </div>
                         </div>
                     </li>
                     <li class="glide__slide">
                         <div class="col-xs-12 col-lg d-flex justify-content-around p-0">
                             <div class="card-questions">
-                                <div class="row">
-                                    <div class="col-xs-12 col-lg-3">
-                                        <img src="assets/img/perfil-2.png" class="img-fluid mx-auto" alt="Perfil">
-                                    </div>
-                                    <div class="col-xs-12 col-lg">
-                                        <h2>Pablo Vilches</h2>
-                                        <h4>Diseñador</h4>
-                                    </div>
-                                </div>
-                                <p class="m-0 pt-3">Vehicula vivamus auctor aliquam himenaeos, et euismod facilisi.</p>
+                                <h2>¿Cómo completo mis datos?</h2>
+                                <h4 class="text-orange">Apliacación</h4>
+                                <p class="m-0 pt-3">Algunos datos deberás completarlos al momento de realizar tu registro como usuario nuevo, luego una vez hayas finalizado tu registro podrás acceder a tu perfil de Tikitaka donde deberás ir a Mi Perfil para completar los datos personales, archivos y servicios, disponibilidad horaria, tarifas de tus servicios y datos bancarios; de esta forma podrás completar 100% tu perfil. Es importante que consideres que mientras más completo esté tu perfil mayor serán las solicitudes de servicios que recibirás y por ende tendrás más opciones de aumentar tus ingresos.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Sobre Experiencia de Servicio -->
+                    <li class="glide__slide">
+                        <div class="col-xs-12 col-lg d-flex justify-content-around p-0">
+                            <div class="card-questions">
+                                <h2>¿Qué pasa si voy tarde a atender un cliente?</h2>
+                                <h4 class="text-blue">Experiencia de Servicio</h4>
+                                <p class="m-0 pt-3">En esta situación es muy importante que le avises cuanto a antes a tu cliente que estás retrasado utilizando el chat que tendrás disponible dentro de la aplicación para comunicarte. Debes avisar antes de la hora agendada para que cliente no se preocupe. Si llegas más de 15 minutos tarde el cliente podrá cancelar su reserva y en este caso el proveedor de servicio NO recibirá pago. Recuerda que tanto para ti como los clientes el tiempo es muy importante por lo que la puntualidad es un atributo diferenciador en el servicio. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="col-xs-12 col-lg d-flex justify-content-around p-0">
+                            <div class="card-questions">
+                                <h2>¿Qué debo hacer si estoy atendiendo a un cliente y quiere agregar un servicio extra?</h2>
+                                <h4 class="text-blue">Experiencia de Servicio</h4>
+                                <p class="m-0 pt-3">Un cliente puede agregar un servicio adicional, para esto deberá realizar una nueva reserva y tú sólo podrás aceptarla en caso que tengas agenda disponible en ese momento; dado que de lo contrario podría afectar a otros clientes que te entregarían una baja calificación por incumplimiento lo que podría implicar que en el futuro recibas menos solicitudes.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="col-xs-12 col-lg d-flex justify-content-around p-0">
+                            <div class="card-questions">
+                                <h2>¿Puedo rechazar una solicitud de servicio?</h2>
+                                <h4 class="text-blue">Experiencia de Servicio</h4>
+                                <p class="m-0 pt-3">Cada vez que un cliente te elige para un trabajo es porque está confiando en tu experiencia y en las calificaciones que has recibido de otros clientes por los trabajos realizados; y si bien por alguna eventualidad no puedes o no estás seguro de poder realizar el servicio, siempre tienes la opción de rechazar una solicitud; sin embargo, el ideal es que no rechaces las solicitudes que recibas de los clientes, dado que esto afectará tu calificación y puede que recibas menos clientes en el futuro. Para evitar estas situaciones es fundamental que siempre tengas actualizada tu disponibilidad horaria, bloqueando los días y horarios que no estarás disponibles.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Sobre Pagos -->
+                    <li class="glide__slide">
+                        <div class="col-xs-12 col-lg d-flex justify-content-around p-0">
+                            <div class="card-questions">
+                                <h2>¿Cómo recibo mis pagos?</h2>
+                                <h4 class="text-green">Pagos</h4>
+                                <p class="m-0 pt-3">Todos los clientes realizarán los pagos por medio de la aplicación, por lo tanto, no debes recibir dinero en efectivo. Posteriormente Tikitaka te depositará semanalmente en la cuenta bancaria que hayas ingresado en la aplicación todos los ingresos generados por los trabajos que hayas realizado durante ese período.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="col-xs-12 col-lg d-flex justify-content-around p-0">
+                            <div class="card-questions">
+                                <h2>¿Cómo pagan los clientes?</h2>
+                                <h4 class="text-green">Pagos</h4>
+                                <p class="m-0 pt-3">Todos los clientes realizarán los pagos por medio de la aplicación, por lo tanto, no debes recibir dinero en efectivo. Posteriormente Tikitaka te depositará semanalmente en la cuenta bancaria que hayas ingresado en la aplicación todos los ingresos generados por los trabajos que hayas realizado durante ese período.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="col-xs-12 col-lg d-flex justify-content-around p-0">
+                            <div class="card-questions">
+                                <h2>¿Cómo puedo aumentar mis ingresos?</h2>
+                                <h4 class="text-green">Pagos</h4>
+                                <p class="m-0 pt-3">Esto dependerá de ti y para esto existen ciertas claves que te podrían ayudar. 1) Ingresar la mayor disponibilidad de horarios en tu perfil; 2) Completar toda la información en tu perfil; 3) Aceptar la mayor cantidad de solicitudes que recibas; 4) No cancelar reservas y/o rechazar solicitudes; 5) Mantener precios de mercado respecto a los demás proveedores de servicios; y 6) Brindar atención de excelencia y trabajos de calidad para recibir buenas calificaciones.</p>
                             </div>
                         </div>
                     </li>
                 </ul>
+                <div id="caracteristicas"></div>
             </div>
             <div class="glide__arrows" data-glide-el="controls">
                 <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="assets/img/arrow/prev.svg" alt="Prev"></button>
@@ -236,7 +256,7 @@
             </div>
         </div>
     </div>
-    <div class="container pt-5" id="caracteristicas">
+    <div class="container mt-5">
         <div class="row pb-5">
             <div class="col title-mobile text-center">
                 <h2>Con estos simples pasos podrás generar tus ganancias</h2>
@@ -290,7 +310,7 @@
             </div>
             <div class="col-xs-12 col-lg d-flex justify-content-center">
                 <div class="col text-view text-center">
-                    <div class="bg-servicio d-flex justify-content-center justify-content-lg-start py-4">
+                    <div class="bg-banco d-flex justify-content-center justify-content-lg-start py-4">
                         <img src="assets/img/view/lupa5.svg" class="img-fluid zoom w-50" alt="Paso 5">
                     </div>
                     <h2 class="pt-5">Paso 5</h2>
@@ -313,7 +333,8 @@
                     <div class="text-banner-e">
                         <h1>Asesorías y desarrollos tecnológicos</h1>
                         <p>Apoyo continuo al desarrollo de ideas innovadoras, búsqueda de eficiencia y optimización </p>
-                        <button class="btn bg-blue"><a href="#contacto">Contacto</a></button>
+                        <!-- Button modal -->
+                        <button class="btn bg-blue mb-5" data-toggle="modal" data-target="#staticBackdrop"><a href="#contacto">Contacto</a></button>
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-6">
@@ -340,24 +361,64 @@
                 <div class="col-xs-12 col-lg d-flex justify-content-md-end justify-content-sm-start">
                     <ul class="list-group">
                         <li class="list-item-tt font-weight-bold fz-14">Contacto</li>
-                        <li class="list-item-tt pt-4"><img src="assets/img/contact/mail.svg" alt="Correo" class="pr-2">contacto@tiki-taka.com</li>
-                        <li class="list-item-tt py-3"><img src="assets/img/contact/phone.svg" alt="Teléfono" class="pr-2">+568 2873 4007</li>
-                        <li class="list-item-tt">Dirección tiki-taka</li>
+                        <li class="list-item-tt pt-4"><img src="assets/img/contact/mail.svg" alt="Correo" class="pr-2">contacto@tikitakaapp.cl</li>
+                        <li class="list-item-tt">Santiago de Chile</li>
                     </ul>
                 </div>
             </div>
             <hr class="mt-0"/>
-            <div class="row sm-hover">
+            <div class="row r-s sm-hover">
                 <div class="col text-right pb-3">
                     <span class="pr-2">SIGUENOS:</span>
-                    <img src="assets/img/social-media/facebook.svg" alt="Facebook">
-                    <img src="assets/img/social-media/instagram.svg" alt="Instagram">
-                    <img src="assets/img/social-media/linkedin.svg" alt="Linkedin">
+                    <a href="https://www.facebook.com/profile.php?id=100069213075646" target="_blank"><img src="assets/img/social-media/facebook.svg" alt="Facebook"></a>
+                    <a href="https://instagram.com/tikitakaapp.cl?utm_medium=copy_link" target="_blank"><img src="assets/img/social-media/instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/tiki-taka-app-041194214" target="_blank"><img src="assets/img/social-media/linkedin.svg" alt="Linkedin"></a>           
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Escríbenos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Nombre<span class="text-red">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Apellido<span class="text-red">*</span></label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Teléfono<span class="text-red">*</span>:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">E-mail<span class="text-red">*</span>:</label>
+                        <input type="email" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Comentario:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn bg-blue" style="width: 100%;">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 <script>
@@ -371,13 +432,9 @@
         }
     };
     new Glide('.glide', config).mount()
-</script>   
+</script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>  
+
 </body>
 </html>

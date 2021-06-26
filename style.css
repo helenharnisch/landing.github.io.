@@ -24,6 +24,22 @@ a {
     color: #FFFFFF;
 }
 
+.text-red {
+    color: #fa0505;
+}
+
+.text-orange {
+    color: #FB7B34;
+}
+
+.text-blue {
+    color: #2178FC;
+}
+
+.text-green {
+    color: #3EB243;
+}
+
 .fz-12 {
     font-size: 12px;
 }
@@ -75,7 +91,17 @@ a {
 /* Style Navbar */
 
 .navbar {
-    height: 80px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+nav ul {
+    position:relative;
+}
+  
+nav ul li:first-child {
+    margin-left:-32px;
 }
 
 .nav-tt ul li a {
@@ -89,14 +115,6 @@ a {
     padding: 10px 30px !important;
 }
 
-nav ul {
-    position:relative;
-}
-  
-nav ul li:first-child {
-    margin-left:-32px;
-}
-  
 .nav-tt li:nth-child(4):after, .bg-footer li:nth-child(1):after {
     content:"";
     width:30px;
@@ -112,6 +130,11 @@ nav ul li:first-child {
 nav ul li:nth-child(2):hover ~ li:nth-child(4):after { transform:translateX(135px); }
 nav ul li:nth-child(3):hover ~ li:nth-child(4):after { transform:translateX(285px); }
 nav ul li:nth-child(4):hover:after { transform:translateX(415px); }
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(assets/img/menu.svg) !important; 
+ }
+
 
 /* Style Banner */
 
@@ -135,6 +158,11 @@ nav ul li:nth-child(4):hover:after { transform:translateX(415px); }
     display: block;
 }
 
+.bg-banner span{
+    font-size: 24px;
+    font-weight: 700;
+}
+
 @media screen and (min-width:768px){
     /*.bg-banner img{margin-right: 100px;}*/
     /*.text-banner{position: absolute; top: 50%; left: 11%; transform: translate(-10%, -50%); text-align: left;}*/
@@ -146,7 +174,7 @@ nav ul li:nth-child(4):hover:after { transform:translateX(415px); }
 
 .card {
     width: 349px;
-    height: 280px;
+    height: 240px;
     background: #FFFFFF;
     box-shadow: 7px 8px 20px rgba(82, 82, 82, 0.1);
     border-radius: 5px;
@@ -185,11 +213,12 @@ nav ul li:nth-child(4):hover:after { transform:translateX(415px); }
 .card p {
     color: #707B8E;
     font-size: 12px;
+    /*text-align: justify;*/
 }
 
 .card-questions {
-    width: 273.5px;
-    height: 166.89px;
+    width: 350px;
+    height: 365px;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 7px 8px 20px rgba(82, 82, 82, 0.1);
@@ -203,11 +232,11 @@ nav ul li:nth-child(4):hover:after { transform:translateX(415px); }
     font-weight: 600;
     margin: 0;
     text-align: left;
+    min-height: 40px;
 }
 
 .card-questions h4 {
-    color: #FB7B34;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     margin: 0;
     text-align: left;
@@ -215,7 +244,7 @@ nav ul li:nth-child(4):hover:after { transform:translateX(415px); }
 
 .card-questions p {
     color: #707B8E;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 168.3%;
     text-align: justify;
     letter-spacing: 0.02em;
@@ -279,7 +308,6 @@ nav ul li:nth-child(4):hover:after { transform:translateX(415px); }
 }
 
 .faq p:nth-child(1) {
-    color: #FA5805;
     font-size: 16px;
     font-weight: 500;
 }
@@ -336,30 +364,41 @@ nav ul li:nth-child(4):hover:after { transform:translateX(415px); }
 }
 
 .bg-horario {
-    background-image: url(assets/img/view/paso1.png); 
+    background-image: url(assets/img/view/paso1.svg); 
     background-repeat: no-repeat; 
     background-position: left; 
     width: 100%;
  }
 
 .bg-servicio {
-    background-image: url(assets/img/view/paso2.png); 
+    background-image: url(assets/img/view/paso2.svg); 
     background-repeat: no-repeat; 
     background-position: right; 
     width: 100%;
  }
 
  .bg-tarifa {
-    background-image: url(assets/img/view/paso3.png); 
+    background-image: url(assets/img/view/paso3.svg); 
     background-repeat: no-repeat; 
     background-position: center; 
     width: 100%;
  }
 
+ .navbar-toggler {
+     border: 0 !important;
+ }
+
 .bg-distancia {
-    background-image: url(assets/img/view/paso4.png); 
+    background-image: url(assets/img/view/paso4.svg); 
     background-repeat: no-repeat; 
-    background-position: center; 
+    background-position: left; 
+    width: 100%;
+ }
+
+ .bg-banco {
+    background-image: url(assets/img/view/paso5.png); 
+    background-repeat: no-repeat; 
+    background-position: right; 
     width: 100%;
  }
 
@@ -400,18 +439,18 @@ nav ul li:nth-child(4):hover:after { transform:translateX(415px); }
    width: 100% !important;
 }
 
-.glide__arrow--left {
+/*.glide__arrow--left {
    left: 2em;
-}
+}*/
 
 .glide__arrow--right {
-   right: 2em;
+   right: 0em;
 }
 
 .glide__arrow {
    position: absolute;
    display: block;
-   top: -10%;
+   top: -6%;
    z-index: 2;
    color: white;
    padding: 9px 12px;
@@ -465,8 +504,14 @@ hr {
     text-decoration: none !important;
 }
 
-.bg-footer .sm-hover img:hover {
+.bg-footer .r-s img {
     background: #FB7B34;
+    cursor: pointer;
+}
+
+.bg-footer .sm-hover img:hover {
+    background: none;
+    color: #FA5805;
     cursor: pointer;
 }
 
@@ -525,6 +570,14 @@ hr {
     text-align: center; 
     font-size: 18px; 
     padding: 8px 0;
+    border: none;
+    outline: 0 !important;
+    box-shadow:  0 0 0 0 transparent!important;
+}
+
+button {
+    border: none;
+    outline:none;
 }
 
 .btn:hover {
@@ -538,19 +591,33 @@ hr {
     }
     .bg-horario {
         background-position: center;  
-     }
+    }
     
-     .bg-servicio {
+    .bg-servicio {
         background-position: center;  
-     }
+    }
     
-     .bg-tarifa {
+    .bg-tarifa {
         background-position: center;  
-     }
+    }
     
-     .bg-distancia {
+    .bg-distancia {
         background-position: center;  
-     }
+    }
+
+    .nav-tt ul li a {
+        text-align: left;
+        padding: 18px 3px !important;
+    }
+
+    .nav-tt li:nth-child(4):after, .bg-footer li:nth-child(1):after {
+        content: none;
+    }
+
+    nav ul li:first-child {
+        margin-left: 0;
+    }
+    
   }
 
 
