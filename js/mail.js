@@ -1,5 +1,5 @@
 
-const url = "http://localhost:12001/contacform"
+const url = "https://api.tikitakaapp.cl/contacform"
 const sendMail = (name, lastname, phone, mail, message) => {
     let alertSuccess = document.getElementById('success')
     let alertError = document.getElementById('error')
