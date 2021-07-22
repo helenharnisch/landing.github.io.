@@ -378,15 +378,15 @@ nav ul li:nth-child(4):hover:after {
     transform: scale(1.5);
 }
 
-.bg-horario {
-    background-image: url(assets/img/view/paso1.svg);
+.bg-servicio {
+    background-image: url(assets/img/view/paso2.svg);
     background-repeat: no-repeat;
     background-position: left;
     width: 100%;
 }
 
-.bg-servicio {
-    background-image: url(assets/img/view/paso2.svg);
+.bg-horario {
+    background-image: url(assets/img/view/paso1.svg);
     background-repeat: no-repeat;
     background-position: right;
     width: 100%;
@@ -577,10 +577,9 @@ hr {
     border-radius: 5px;
     height: 44px;
     color: white;
-    width: 152px;
     text-align: center;
     font-size: 18px;
-    padding: 8px 0;
+    padding: 8px 15px;
     border: none;
     outline: 0 !important;
     box-shadow: 0 0 0 0 transparent!important;
@@ -593,7 +592,7 @@ button {
 
 .btn:hover {
     color: white;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .desktop{
@@ -618,6 +617,9 @@ button {
         background-position: center;
     }
     .bg-distancia {
+        background-position: center;
+    }
+    .bg-banco {
         background-position: center;
     }
     .nav-tt ul li a {
